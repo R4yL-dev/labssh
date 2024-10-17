@@ -1,0 +1,7 @@
+services:
+  master:
+    build: containers/master
+    command: tail -f /dev/null
+    hostname: master
+  node:
+    build: containers/node
